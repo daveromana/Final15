@@ -2,6 +2,7 @@ package org.itstep.dao.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -15,7 +16,7 @@ import lombok.Setter;
 public class Student extends User{
 	
 	@Column(name = "Group", nullable = false)
-	@OneToMany(targetEntity = Group.class)
+	//@ManyToOne(targetEntity = Group.class)
 	private long groupId;
 
 }
